@@ -17,5 +17,16 @@ Para solucionar este problema se plantea crear una aplicación en red que ofrezc
 * La API REST se programará en Python.
 * Los juegos estarán desarrollados en C# con el motor gráfico Unity.
 
+## Aprovisionamiento
+
+* Python 2.7
+* Pip
+* MongoDB
+* Librerías python:
+ * flask
+ * flask-restful
+ * flask-jsonpify
+ * pymongo
+
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
