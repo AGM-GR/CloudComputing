@@ -7,7 +7,7 @@ Se pretende desarrollar una solución para una serie de videjuegos en distintas 
 ## Solución del Problema
 
 Para solucionar este problema se plantea crear una aplicación en red que ofrezca métodos para obtener y almacenar los datos de los jugadores:
-* Almacenará los datos de los jugadores en una base de datos NoSQL
+* Almacenará los datos de los jugadores en una base de datos NoSQL.
 * Constará de una API REST.
 * Juegos multiplataforma hará uso de la API.
 
