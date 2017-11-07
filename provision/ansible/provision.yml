@@ -1,0 +1,7 @@
+---
+
+- hosts: servers
+  user: alex
+  sudo: yes
+  roles:
+  - common
