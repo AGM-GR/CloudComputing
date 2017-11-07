@@ -1,5 +1,4 @@
 ---
-
 - hosts: servers
   user: alex
   sudo: yes
