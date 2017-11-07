@@ -23,10 +23,10 @@ Para solucionar este problema se plantea crear una aplicación en red que ofrezc
 * Pip
 * MongoDB
 * Librerías python:
- * flask
- * flask-restful
- * flask-jsonpify
- * pymongo
+  * flask
+  * flask-restful
+  * flask-jsonpify
+  * pymongo
 
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
