@@ -19,14 +19,16 @@ Para solucionar este problema se plantea crear una aplicación en red que ofrezc
 
 ## Aprovisionamiento
 
-* Python 2.7
-* Pip
-* MongoDB
+El aprovisionamiento en la máquina servidora se realiza mediante Ansible, el cual instalará:
+
+* MongoDB -> La base de datos sobre la que trabaja.
+* Python 2.7 -> El lenguaje utilizado.
+* Pip -> Instalador de librerías para python.
 * Librerías python:
-  * flask
-  * flask-restful
-  * flask-jsonpify
-  * pymongo
+  * flask -> Microframework sobre el que montaremos la API.
+  * flask-restful -> Librerías de flask para manejar una API RESTFUL.
+  * flask-jsonpify -> Transforma datos de la BD a JSON.
+  * pymongo -> Conexión con la base de datos MongoDB.
 
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
