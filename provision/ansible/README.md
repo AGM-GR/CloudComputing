@@ -9,3 +9,7 @@ Lo siguiente será modificar el archivo **host** en el cual debemos sustituir la
 Una vez hecho esto solo ejecutar el siguiente comando estando situado en la carpeta del aprovisionamiento:
 
 `ansible-playbook provision.yml`
+
+Resultado de la ejecución del aprovisionamiento:
+
+![EjecuciónDelAprovisionamiento](images/resultado_ejecucion.png?raw=true)
