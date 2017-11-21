@@ -30,5 +30,15 @@ El aprovisionamiento en la máquina servidora se realiza mediante Ansible, el cu
   * flask-jsonpify -> Transforma datos de la BD a JSON.
   * pymongo -> Conexión con la base de datos MongoDB.
 
+[Cómo realizar el Aprovisionamiento y ejecución](https://agm-gr.github.io/CloudComputing/Aprovisionamiento)
+
+## Despliegue
+
+El despliegue en Azure se realiza ejecutando el script acopio.sh
+Para su ejecución sera necesario tener instalado y configurado Azure CLI 2.0 y el programa "jq".
+Este script crea un grupo de recursos "CC" en Est-EU y una máquina virtual con Ubuntu 16.0 en dicho grupo, la cual es aprovisionada automáticamente.
+
+[Cómo realizar el Despliegue y ejecución](https://agm-gr.github.io/CloudComputing/Despliegue)
+
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)

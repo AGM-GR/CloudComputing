@@ -12,4 +12,4 @@ Una vez hecho esto solo ejecutar el siguiente comando estando situado en la carp
 
 Resultado de la ejecución del aprovisionamiento:
 
-![EjecuciónDelAprovisionamiento](images/resultado_ejecucion.png?raw=true)
+![EjecuciónDelAprovisionamiento](images/resultado_ejecucion_aprovisionamiento.png?raw=true)
