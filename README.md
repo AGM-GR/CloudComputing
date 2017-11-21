@@ -4,9 +4,13 @@ Repositorio creado por Alejandro Guerrero Martínez para la asignatura de Cloud 
 
 La documentación completa del proyecto se encuentra en: [agm-gr.github.io/CloudComputing](https://agm-gr.github.io/CloudComputing/)
 
+#### Descripción
+
 El proyecto tratará de un servicio de datos para juegos, en el cual se almacenarán los datos de los jugadores de distintos juegos (IDs, puntuación, localización, amigos ...)
 
 Para ello se despliega una API Restful, sobre una base de datos MongoDB que guardará la información, para que los juegos puedan acceder a los datos en todo momento.
+
+#### Aprovisionamiento
 
 El aprovisionamiento del servidor se realiza con Ansible, el cual instalará en la/las máquinas indicadas:
 * Python 2.7, el lenguaje sobre el que se reliza la API.
@@ -15,7 +19,9 @@ El aprovisionamiento del servidor se realiza con Ansible, el cual instalará en 
   * pymongo, para poder trabajar con MongoDB en python.
 * MongoDB, la base de datos que utilizaremos.
 
-Podremos encontrar los archivos del aprovisionamiento y más información en el [enlace](https://github.com/AGM-GR/CloudComputing/tree/master/provision/ansible).
+Cómo ejecutar el aprovisionamiento y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Aprovisionamiento).
+
+#### Despliegue
 
 También es posible crear el sistema automáticamente en azure ejecutando el script [acopio.sh](https://github.com/AGM-GR/CloudComputing/blob/master/acopio.sh)
 Para su ejecución sera necesario tener instalado y configurado Azure CLI 2.0 y el programa "jq".
@@ -24,3 +30,5 @@ Este script nos creará un grupo de recursos "CC" y una máquina virtual con Ubu
 La máquina desplegada para el hito 3 le corresponde la siguiente IP.
 
 Despliegue: 52.179.97.106
+
+Cómo ejecutar el despliegue y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Despliegue).
