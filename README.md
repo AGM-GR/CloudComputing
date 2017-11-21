@@ -16,3 +16,11 @@ El aprovisionamiento del servidor se realiza con Ansible, el cual instalará en 
 * MongoDB, la base de datos que utilizaremos.
 
 Podremos encontrar los archivos del aprovisionamiento y más información en el [enlace](https://github.com/AGM-GR/CloudComputing/tree/master/provision/ansible).
+
+También es posible crear el sistema automáticamente en azure ejecutando el script [acopio.sh](https://github.com/AGM-GR/CloudComputing/blob/master/acopio.sh)
+Para su ejecución sera necesario tener instalado y configurado Azure CLI 2.0 y el programa "jq".
+Este script nos creará un grupo de recursos "CC" y una máquina virtual con Ubuntu 16.0 aprovisionada en nuestra cuenta de Azure.
+
+La máquina desplegada para el hito 3 le corresponde la siguiente IP.
+
+Despliegue: 52.179.97.106
