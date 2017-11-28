@@ -25,7 +25,8 @@ Cómo ejecutar el aprovisionamiento y más información en el [enlace](https://a
 
 También es posible crear el sistema automáticamente en azure ejecutando el script [acopio.sh](https://github.com/AGM-GR/CloudComputing/blob/master/acopio.sh)
 Para su ejecución sera necesario tener instalado y configurado Azure CLI 2.0 y el programa "jq".
-Este script nos creará un grupo de recursos "CC" y una máquina virtual con Ubuntu 16.0 (imagen elegida por su ligereza y conocimiento previo con ésta distribución) aprovisionada en nuestra cuenta de Azure.
+Este script nos creará un grupo de recursos "CC" y una máquina virtual aprovisionada en nuestra cuenta de Azure.
+En ésta máquina se instalará una imagen de Ubuntu 16.0, elegida por su ligereza, facilidad de instalación con azure y conocimiento previo con ésta distribución.
 
 La máquina desplegada para el hito 3 le corresponde la siguiente IP.
 
