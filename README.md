@@ -30,6 +30,6 @@ En ésta máquina se instalará una imagen de Ubuntu 16.0, elegida por su ligere
 
 La máquina desplegada para el hito 3 le corresponde la siguiente IP.
 
-Despliegue: 52.179.97.106
+Despliegue: 52.168.162.6
 
 Cómo ejecutar el despliegue y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Despliegue).
