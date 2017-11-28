@@ -2,7 +2,7 @@
 
 Para utilizar este aprovisionamiento lo primero será instalar Ansible en nuestra máquina local:
 
-`sudo apt-get install ansible`
+`pip install ansible`
 
 Lo siguiente será modificar el archivo **host** en el cual debemos sustituir la ip escrita por la/las ips de las máquinas a aprovisionar y en el archivo **provision.yml** modificar el usuario por el usuario de nuestra máquina.
 

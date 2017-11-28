@@ -2,10 +2,6 @@
 
 Para realizar el Despliegue será necesario contar con una cuenta de Azure y tener instalado el Azure CLI 2.0:
 
-`sudo apt-get install azure-cli`
-
-o
-
 `pip install azule-cli`
 
 Y configurarlo para conectar con nuestra cuenta de azure, ejecutando el siguiente comando:
