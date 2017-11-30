@@ -1,0 +1,67 @@
+ENV['VAGRANT_NO_PARALLEL'] = 'yes'
+
+Vagrant.configure('2') do |config|
+    config.vm.box = 'azure'
+    
+    # Path a tu clave ssh
+    config.ssh.private_key_path = '~/.ssh/id_rsa'
+    
+    config.vm.define "api" do |api|
+        api.vm.provider :azure do |azure, override|
+            
+            # Establece la localización de la máquina virtual
+            azure.location = "eastus"
+
+            # Nombre del grupo de recursos y de la máquina a crear
+            azure.resource_group_name = "CC"
+            azure.vm_name = "cloudcomputingapi"
+            
+            # Tipo de máquina a desplegar
+            azure.vm_size = "Standard_DS1_v2"
+
+            # Imagen a instalar en la máquina
+            azure.vm_image_urn = "Canonical:UbuntuServer:16.04-LTS:latest"
+            
+            # Subscripción de azure
+            azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+            # Detalles de la cuenta de azure
+            azure.tenant_id = ENV['AZURE_TENANT_ID']
+            azure.client_id = ENV['AZURE_CLIENT_ID']
+            azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+            
+        end
+    end
+        
+    config.vm.define "db" do |db|
+        db.vm.provider :azure do |azure, override|
+            
+            # Establece la localización de la máquina virtual
+            azure.location = "eastus"
+
+            # Nombre del grupo de recursos y de la máquina a crear
+            azure.resource_group_name = "CC"
+            azure.vm_name = "cloudcomputingdb"
+            
+            # Tipo de máquina a desplegar
+            azure.vm_size = "Standard_DS1_v2"
+
+            # Imagen a instalar en la máquina
+            azure.vm_image_urn = "Canonical:UbuntuServer:16.04-LTS:latest"
+
+            # Subscripción de azure
+            azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
+
+            # Detalles de la cuenta de azure
+            azure.tenant_id = ENV['AZURE_TENANT_ID']
+            azure.client_id = ENV['AZURE_CLIENT_ID']
+            azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+            
+        end
+    end
+    
+    config.vm.provision "ansible" do |ansible|
+        ansible.playbook = "provision.yml"
+    end
+    
+end
