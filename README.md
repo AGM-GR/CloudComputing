@@ -33,3 +33,13 @@ La máquina desplegada para el hito 3 le corresponde la siguiente IP.
 Despliegue: 52.168.162.6
 
 Cómo ejecutar el despliegue y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Despliegue).
+
+#### Orquestación
+
+Podremos orquestar el despliegue usando Vagrant, una vez configurado nuestra cuenta de azure con AzureCLI, ejecutaremos el comando `vagrant up` en la carpeta de [orquestacion](https://github.com/AGM-GR/CloudComputing/tree/master/orquestacion).
+
+Nos creará dos máquinas nuevas en azure, una para la API y otra para la base de datos, ambas con Ubuntu 16.0 y totalmente aprovisionadas como anteriormente.
+
+Despliegue Vagrant: 52.191.119.48
+
+Cómo ejecutar la orquestación y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Orquestacion).
