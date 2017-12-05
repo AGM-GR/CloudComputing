@@ -37,9 +37,17 @@ El aprovisionamiento en la máquina servidora se realiza mediante Ansible, el cu
 El despliegue en Azure se realiza ejecutando el script acopio.sh
 Para su ejecución sera necesario tener instalado y configurado Azure CLI 2.0 y el programa "jq".
 Este script crea un grupo de recursos "CC" en Est-EU y una máquina virtual en dicho grupo, la cual es aprovisionada automáticamente.
-En la máquina se instala Ubuntu 16.0, imágen elegida por su ligereza, facilidad de instalación con azure y conocimiento previo con ésta distribución. 
+En la máquina se instala Ubuntu 16.0, imágen elegida por su ligereza, facilidad de instalación con azure y conocimiento previo con ésta distribución.
 
 [Cómo realizar el Despliegue y ejecución](https://agm-gr.github.io/CloudComputing/Despliegue)
+
+## Orquestación
+
+Podremos orquestar el despliegue usando Vagrant, una vez configurado nuestra cuenta de azure con AzureCLI, ejecutaremos el comando `vagrant up` en la carpeta de [orquestacion](https://github.com/AGM-GR/CloudComputing/tree/master/orquestacion).
+
+Nos creará dos máquinas nuevas en azure, una para la API y otra para la base de datos, ambas con Ubuntu 16.0 y totalmente aprovisionadas como anteriormente.
+
+Cómo ejecutar la orquestación y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Orquestacion).
 
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
