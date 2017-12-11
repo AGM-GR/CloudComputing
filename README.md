@@ -40,6 +40,6 @@ Podremos orquestar el despliegue usando Vagrant, una vez configurado nuestra cue
 
 Nos creará dos máquinas nuevas en azure, una para la API y otra para la base de datos, ambas con Ubuntu 16.0 y totalmente aprovisionadas como anteriormente.
 
-Despliegue Vagrant: 52.191.119.48
+Despliegue Vagrant: 52.168.23.89
 
 Cómo ejecutar la orquestación y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Orquestacion).
