@@ -49,5 +49,12 @@ Nos creará dos máquinas nuevas en azure, una para la API y otra para la base d
 
 Cómo ejecutar la orquestación y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Orquestacion).
 
+## Contenedores
+
+El servicio se podrá desplegar en un contenedor de Docker destinado a la ejecución de este. El contenedor tiene una imagen del sistema Alpine, elegido por su simplicidad y ligereza (la imagen completa apenas ocupa 60 mb) dejando más espacio para datos y necesitando menos cpu para el servicio.
+En el dockerfile se especifica la instalación de python y pip en el sistema y las correspondientes librerías de python necesarias desde pip.
+
+Como lanzar el contenedor en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Contenedores).
+
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
