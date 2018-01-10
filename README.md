@@ -39,7 +39,17 @@ Cómo ejecutar el despliegue y más información en el [enlace](https://agm-gr.g
 Podremos orquestar el despliegue usando Vagrant, una vez configurado nuestra cuenta de azure con AzureCLI, ejecutaremos el comando `vagrant up` en la carpeta de [orquestacion](https://github.com/AGM-GR/CloudComputing/tree/master/orquestacion).
 
 Nos creará dos máquinas nuevas en azure, una para la API y otra para la base de datos, ambas con Ubuntu 16.0 y totalmente aprovisionadas como anteriormente.
-
+https://hub.docker.com/r/agmgr/cloudcomputing/
 Despliegue Vagrant: 52.168.23.89
 
 Cómo ejecutar la orquestación y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Orquestacion).
+
+#### Contenedores
+
+El servicio se podrá desplegar en un contenedor de Docker destinado a la ejecución de este. El contenedor tiene una imagen del sistema Alpine, elegido por su simplicidad y ligereza (la imagen completa apenas ocupa 60 mb) dejando más espacio para datos y necesitando menos cpu para el servicio.
+
+Contenedor: [https://dockerstatus.azurewebsites.net](https://dockerstatus.azurewebsites.net)
+
+Imagen del contenedor en Docker Hub: [https://hub.docker.com/r/agmgr/cloudcomputing/](https://hub.docker.com/r/agmgr/cloudcomputing/)
+
+Como lanzar el contenedor en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Contenedores).
