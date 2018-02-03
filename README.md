@@ -13,9 +13,9 @@ Para ello se despliega una API Restful, sobre una base de datos MongoDB que guar
 #### Aprovisionamiento
 
 El aprovisionamiento del servidor se realiza con Ansible, el cual instalará en la/las máquinas indicadas:
-* Python 2.7, el lenguaje sobre el que se reliza la API.
+* Python 3.6, el lenguaje sobre el que se reliza la API.
 * Pip para instalar librerías de python:
-  * flask, flask-restful y flask-jsonpify, el cual sera el microframework sobre el que montaremos la API REST.
+  * flask, flask-restful flask-cors y flask-jsonpify, el cual sera el microframework sobre el que montaremos la API REST.
   * pymongo, para poder trabajar con MongoDB en python.
 * MongoDB, la base de datos que utilizaremos.
 
@@ -53,3 +53,11 @@ Contenedor: [https://dockerstatus.azurewebsites.net](https://dockerstatus.azurew
 Imagen del contenedor en Docker Hub: [https://hub.docker.com/r/agmgr/cloudcomputing/](https://hub.docker.com/r/agmgr/cloudcomputing/)
 
 Como lanzar el contenedor en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Contenedores).
+
+### Composición
+
+El servicio final desarrollado [GameDataService](GameDataService/gamedataservice.py), consta de dos contenedores para su composición, uno que ejecuta el servicio REST, sobre una imagen de Alpine con python3, como ya se había comentado anteriormente se ha elegido por su ligereza y simplicidad. Y otro contenedor con la base de datos MongoDB la cual será consultada por la API para obtener los datos, la imagen elegida es la oficial de MongoDB, ya que viene preparada para servir solo la base de datos totalmente configurada.
+
+Hito6: [https://ccdockercompose.westeurope.cloudapp.azure.com](ccdockercompose.westeurope.cloudapp.azure.com)
+
+Como lanzar el docker-compose en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Composicion).
