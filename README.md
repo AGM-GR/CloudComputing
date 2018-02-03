@@ -22,8 +22,8 @@ Para solucionar este problema se plantea crear una aplicación en red que ofrezc
 El aprovisionamiento en la máquina servidora se realiza mediante Ansible, el cual instalará:
 
 * MongoDB -> La base de datos sobre la que trabaja.
-* Python 2.7 -> El lenguaje utilizado.
-* Pip -> Instalador de librerías para python.
+* Python 3.6 -> El lenguaje utilizado.
+* Pip3 -> Instalador de librerías para python.
 * Librerías python:
   * flask -> Microframework sobre el que montaremos la API.
   * flask-restful -> Librerías de flask para manejar una API RESTFUL.
@@ -55,6 +55,12 @@ El servicio se podrá desplegar en un contenedor de Docker destinado a la ejecuc
 En el dockerfile se especifica la instalación de python y pip en el sistema y las correspondientes librerías de python necesarias desde pip.
 
 Como lanzar el contenedor en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Contenedores).
+
+## Composición
+
+El servicio final desarrollado GameDataService, consta de dos contenedores para su composición, uno que ejecuta el servicio REST, sobre una imagen de Alpine con python3, como ya se había comentado anteriormente se ha elegido por su ligereza y simplicidad. Y otro contenedor con la base de datos MongoDB la cual será consultada por la API para obtener los datos, la imagen elegida es la oficial de MongoDB, ya que viene preparada para servir solo la base de datos totalmente configurada.
+
+Como lanzar el docker-compose en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Composicion).
 
 ## Licencia
 Este proyecto está desarrollado bajo una licencia [GNU GLP V3](https://github.com/AGM-GR/CloudComputing/blob/master/LICENSE)
