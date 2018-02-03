@@ -58,6 +58,6 @@ Como lanzar el contenedor en Azure y más información en el [enlace](https://ag
 
 El servicio final desarrollado [GameDataService](GameDataService/gamedataservice.py), consta de dos contenedores para su composición, uno que ejecuta el servicio REST, sobre una imagen de Alpine con python3, como ya se había comentado anteriormente se ha elegido por su ligereza y simplicidad. Y otro contenedor con la base de datos MongoDB la cual será consultada por la API para obtener los datos, la imagen elegida es la oficial de MongoDB, ya que viene preparada para servir solo la base de datos totalmente configurada.
 
-Hito6: [https://ccdockercompose.westeurope.cloudapp.azure.com](ccdockercompose.westeurope.cloudapp.azure.com)
+Hito6: [http://ccdockercompose.westeurope.cloudapp.azure.com:5000/](http://ccdockercompose.westeurope.cloudapp.azure.com:5000/)
 
 Como lanzar el docker-compose en Azure y más información en el [enlace](https://agm-gr.github.io/CloudComputing/Composicion).
